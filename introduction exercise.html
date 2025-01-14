@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+
+    <!-- Metatags-->
+    <meta charset="utf-8">
+    <meta name="author" content="Author Name goes here">
+    <meta name="description" content="description of webpage goes here">
+    <meta name="keywords" content="keywords go here">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Page Title goes here</title>
+    
+    <meta property="og:title" content="Page Title goes here"/>
+	<meta property="og:type" content="website"/>
+    <meta property="og:description" content="description of webpage goes here"/>
+    <meta property="og:image" content=".jpg" />
+    <meta property="og:url" content=".htm" />
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content=".jpg">
+    <meta name="twitter:card" content=".jpg">
+    <link rel="shortcut icon" href=".png">
+
+    <!-- Link to Stylesheet (CSS)-->
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    
+    <!-- Link to Script (JS)-->
+    <script type="text/javascript" src="./script.js" defer></script>    
+
+</head>
+    
+<body>
+    <header>
+        <h1>HTML & CSS Notes</h1>
+    </header>
+    
+    <section>
+        <h2>1. What is HTML?</h2>
+        <p>HTML (Hypertext Markup Language) is the standard language used to create webpages. It structures the content of a webpage by defining elements such as headings, paragraphs, links, images, forms, and more. HTML uses tags to mark up content. Tags usually come in pairs, with an opening tag and a closing tag. Some tags are self-closing (e.g., <code>&lt;img&gt;</code>).</p>
+    
+        <h2>2. Structure of an HTML Document</h2>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: Declares that the document is an HTML5 document.</li>
+            <li><code>&lt;html&gt;</code>: The root element of the HTML document.</li>
+            <li><code>&lt;head&gt;</code>: Contains meta-information about the webpage such as character encoding, title, and links to external files (like CSS).</li>
+            <li><code>&lt;body&gt;</code>: Contains the actual content of the webpage such as text, images, links, and more.</li>
+        </ul>
+    
+        <h2>3. HTML Tags</h2>
+        <ul>
+            <li><code>&lt;h1&gt; to &lt;h6&gt;</code>: Used to define headings, with <code>&lt;h1&gt;</code> being the largest and most important.</li>
+            <li><code>&lt;p&gt;</code>: Used to define blocks of text.</li>
+            <li><code>&lt;a&gt;</code>: Used to define hyperlinks, which allow users to navigate to other pages or websites.</li>
+            <li><code>&lt;img&gt;</code>: Used to embed images on the page.</li>
+            <li><code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code>: Used to define unordered (bulleted) and ordered (numbered) lists.</li>
+        </ul>
+    
+        <h2>4. HTML Attributes</h2>
+        <ul>
+            <li><code>id</code>: Uniquely identifies an element on the page (used for JavaScript manipulation or CSS styling).</li>
+            <li><code>class</code>: Groups elements together for styling.</li>
+            <li><code>href</code>: Specifies the destination URL for links.</li>
+            <li><code>src</code>: Specifies the source file for images.</li>
+            <li><code>alt</code>: Provides alternative text for images for accessibility.</li>
+        </ul>
+    
+        <h2>5. Forms and Input Elements</h2>
+        <ul>
+            <li><code>&lt;form&gt;</code>: The container for form elements.</li>
+            <li><code>&lt;input&gt;</code>: Defines different types of input fields like text, password, email, etc.</li>
+            <li><code>&lt;label&gt;</code>: Associates a label with a form element.</li>
+            <li><code>&lt;textarea&gt;</code>: Used for multi-line text input.</li>
+            <li><code>&lt;select&gt;</code>: Creates dropdown menus.</li>
+        </ul>
+    
+        <h2>6. Semantic HTML</h2>
+        <p>Semantic HTML uses meaningful tags that describe the content they enclose, improving SEO and accessibility. Examples include: <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;nav&gt;</code>.</p>
+    
+        <h2>7. Tables in HTML</h2>
+        <ul>
+            <li><code>&lt;table&gt;</code>: Defines the table.</li>
+            <li><code>&lt;tr&gt;</code>: Defines a row in the table.</li>
+            <li><code>&lt;td&gt;</code>: Defines a cell (data) in the table.</li>
+            <li><code>&lt;th&gt;</code>: Defines a header cell in the table.</li>
+        </ul>
+    
+        <h2>8. HTML Comments</h2>
+        <p>HTML comments are used to add notes to the code and do not display on the webpage. Syntax: <code>&lt;!-- This is a comment --&gt;</code>.</p>
+    
+        <h2>9. Best Practices in HTML</h2>
+        <ul>
+            <li>Keep the structure semantic for better readability, accessibility, and SEO.</li>
+            <li>Use proper indentation to make your code easy to read.</li>
+            <li>Avoid inline styles and scripts when possible, use external CSS and JavaScript files.</li>
+        </ul>
+    
+        <div class="note">
+            <h2>CSS Notes</h2>
+    
+            <h3>1. What is CSS?</h3>
+            <p>CSS (Cascading Style Sheets) is used to control the appearance and layout of HTML elements. CSS allows you to style various aspects of a webpage, including colors, fonts, spacing, positioning, and more.</p>
+    
+            <h3>2. Basic CSS Syntax</h3>
+            <pre><code>p {
+        color: red;
+        font-size: 16px;
+    }</code></pre>
+    
+            <h3>3. CSS Selectors</h3>
+            <ul>
+                <li><code>Element Selector</code>: Targets all instances of an HTML element (e.g., <code>p</code> for all paragraphs).</li>
+                <li><code>Class Selector</code>: Targets elements with a specific class. It starts with a dot (.) (e.g., <code>.highlight</code>).</li>
+                <li><code>ID Selector</code>: Targets an element with a specific ID. It starts with a hash (#) (e.g., <code>#main-header</code>).</li>
+                <li><code>Universal Selector</code>: Targets all elements on the page (e.g., <code>*</code>).</li>
+                <li><code>Descendant Selector</code>: Targets elements that are inside other elements (e.g., <code>div p</code> targets all <code>&lt;p&gt;</code> elements inside <code>&lt;div&gt;</code>).</li>
+            </ul>
+    
+            <h3>4. The CSS Box Model</h3>
+            <p>The CSS box model describes the rectangular boxes generated for elements, consisting of:</p>
+            <ul>
+                <li>Content: The actual content of the element.</li>
+                <li>Padding: The space around the content.</li>
+                <li>Border: The edge around the padding.</li>
+                <li>Margin: The space outside the border.</li>
+            </ul>
+            <pre><code>div {
+        padding: 20px;
+        border: 1px solid black;
+        margin: 30px;
+    }</code></pre>
+    
+            <h3>5. Layout Techniques</h3>
+            <ul>
+                <li><strong>Flexbox</strong>: A one-dimensional layout model for aligning and distributing space among items in a container.</li>
+                <li><strong>CSS Grid</strong>: A two-dimensional layout system that controls both rows and columns.</li>
+                <li><strong>Positioning</strong>: Defines how an element is placed on the page.</li>
+            </ul>
+    
+            <h3>6. Styling Text</h3>
+            <ul>
+                <li><code>font-family</code>: Specifies the font.</li>
+                <li><code>font-size</code>: Defines the size of the text.</li>
+                <li><code>color</code>: Defines the text color.</li>
+                <li><code>line-height</code>: Sets the height of each line of text.</li>
+                <li><code>text-align</code>: Aligns the text (e.g., left, right, center).</li>
+            </ul>
+        </div>
+    </section>
+
+
+</body>    
+
+</html>
